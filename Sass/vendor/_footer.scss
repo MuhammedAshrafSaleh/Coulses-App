@@ -1,0 +1,37 @@
+/********************************
+    Footer 
+*********************************/
+
+.footer {
+    width: 100%;
+
+
+    &__content {
+        width: 100%;
+        border-top: .3px solid $secondary;
+        padding: 2rem 0;
+        display: inline-block;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 1.5rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+        color: $gray;
+        font-weight: 700;
+    }
+
+    &__copyright {
+        color: $gray;
+        float: right;
+        font-weight: 600;
+        line-height: 0rem;
+        margin-top: -6px;
+    }
+}

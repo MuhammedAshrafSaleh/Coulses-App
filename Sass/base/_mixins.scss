@@ -1,0 +1,53 @@
+@mixin responsive($breakPoint) {
+    @if $breakPoint==smallphone {
+        @media (max-width: 31.25rem) {
+            @content;
+        }
+    }
+
+    @if $breakPoint== phone {
+        @media (max-width: 37.5rem) {
+            @content;
+        }
+    }
+
+    @if $breakPoint==tab {
+        @media (max-width: 56.25rem) {
+            @content;
+        }
+    }
+
+    @if $breakPoint==tabLand {
+        @media (max-width: 75rem) {
+            @content;
+        }
+    }
+
+    @if $breakPoint==bigDesktop {
+        @media (min-width: 112.5rem) {
+            @content;
+        }
+    }
+}
+
+
+
+
+
+
+@mixin positionCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@mixin overlay($opacity) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, $opacity);
+}

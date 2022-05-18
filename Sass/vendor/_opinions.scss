@@ -1,0 +1,115 @@
+/********************************
+    Opinions 
+*********************************/
+
+.opinions {
+    width: 100%;
+    height: 40rem;
+    position: relative;
+
+    &__bg {
+        width: 85%;
+        height: 100%;
+        background-color: $secondary;
+        background-image: url(../Img/features/handsbackground.png);
+        background-blend-mode: multiply;
+        background-size: cover;
+        box-shadow: 0rem 0rem 5rem #000;
+        float: right;
+
+        @include responsive(tab) {
+            width: 100%;
+            float: none;
+            opacity: 0.8
+        }
+
+        @include responsive(phone) {
+            background-blend-mode: luminosity;
+            background-position: center;
+            opacity: 0.9;
+        }
+    }
+
+    .owl-carousel {
+        width: 100%;
+        height: 100%;
+        padding: 10rem 5rem;
+        position: relative;
+
+        @include responsive(tab) {
+            padding: 10rem 0rem;
+        }
+
+        .item {
+            width: 50%;
+            text-align: center;
+
+            @include responsive(tab) {
+                margin: 0 auto;
+            }
+
+            img {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                display: inline-block;
+                position: relative;
+                top: 1rem;
+            }
+
+            &__heading {
+                color: $white;
+                display: inline-block;
+                margin-bottom: 1rem;
+                margin-left: .5rem;
+
+                .change {
+                    color: $secondary;
+                }
+
+                @include responsive(tab) {
+                    font-size: 1.2rem;
+                }
+
+                @include responsive(phone) {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        position: relative;
+        left: -24rem;
+        margin-top: 5rem;
+
+        @include responsive(tab) {
+            left: 0;
+        }
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span,
+    .owl-theme .owl-dots .owl-dot span {
+
+        background: transparent;
+        border: 1px solid $secondary;
+        transition: .4s;
+
+        &:hover {
+            background-image: linear-gradient(to right, $secondary, $primary);
+             border: none;
+        }
+    }
+
+
+    .custom__text {
+        font-weight: 500;
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+
+        @include responsive(tab) {
+            font-size: 1.4rem;
+        }
+    }
+
+}

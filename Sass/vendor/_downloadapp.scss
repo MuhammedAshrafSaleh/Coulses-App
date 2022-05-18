@@ -1,0 +1,60 @@
+/********************************
+    Download App
+*********************************/
+.dwapp {
+    width: 100%;
+    text-align: center;
+    padding-top: 10rem;
+
+    &__content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__shadow {
+        transform: scale(0.6);
+        opacity: 0.8;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+
+    .shadow1 {
+        background-image: url("../Img/Header/1.png");
+        left: 12%;
+        box-shadow: inset 17rem 0rem 17rem rgba(0, 0, 0, 0.8);
+    }
+
+    .shadow2 {
+        background-image: url("../Img/Header/3.png");
+        box-shadow: inset -17rem 0rem 17rem rgba(0, 0, 0, 0.8);
+        right: 12%;
+    }
+
+    .content {
+        width: 28%;
+        max-height: 70rem;
+    }
+
+    &__img {
+        transform: scale(0.75);
+        position: relative;
+        max-width: 100%;
+        z-index: 3;
+    }
+
+    .custom__btn {
+        width: 17rem;
+        margin-bottom: 3rem;
+
+        @include responsive(tabLand) {
+            width: 20rem;
+        }
+
+        @include responsive(phone) {
+            width: 24rem;
+        }
+    }
+}

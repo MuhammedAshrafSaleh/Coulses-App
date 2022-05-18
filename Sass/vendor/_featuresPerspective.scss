@@ -1,0 +1,75 @@
+/********************************
+    Features Prespictive
+*********************************/
+
+.features2 {
+    width: 100%;
+    padding-bottom: 20rem;
+
+    @media (max-width: 630px) {
+        padding: 5rem 0;
+    }
+
+    &__content {
+        width: 100%;
+        display: inline-block;
+    }
+
+    &__item {
+        width: 40%;
+        float: left;
+        padding-left: 5rem;
+        margin-top: 7rem;
+
+        @media (max-width: 630px) {
+            width: 100%;
+            float: none;
+            padding: 0 5rem;
+            padding-bottom: 9rem;
+            text-align: center;
+        }
+
+        i {
+            color: transparent;
+            background-image: linear-gradient(to right, $secondary, $primary);
+            -webkit-background-clip: text;
+            font-size: 4rem;
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+
+
+    }
+
+    &__photo {
+        width: 55%;
+        float: right;
+        margin-left: 5%;
+
+        @media (max-width: 630px) {
+            display: none;
+            float: none;
+        }
+
+        img {
+            max-width: 100%;
+
+        }
+    }
+
+    .custom__heading2 {
+        @media (max-width: 640px) {
+            font-size: 2.5rem;
+        }
+
+        @media (max-width:700px) {
+            font-size: 1.8rem;
+        }
+    }
+
+    .custom__text {
+        @media (max-width: 630px) {
+            font-size: 1.3rem;
+        }
+    }
+}

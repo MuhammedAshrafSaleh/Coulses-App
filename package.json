@@ -1,0 +1,11 @@
+{
+  "name": "newcoulses",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "node-sass": "node-sass Sass/app.scss Css/app.css -w"
+  },
+  "author": "Mohamed",
+  "license": "MIT"
+}

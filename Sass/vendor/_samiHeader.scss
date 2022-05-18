@@ -1,0 +1,39 @@
+/********************************
+    Sami Header 
+*********************************/
+.samiheader {
+    width: 100%;
+    position: relative;
+    padding-bottom: 7rem;
+
+    &__bg {
+        max-width: 100%;
+        opacity: .4;
+        position: absolute;
+        top: -3rem;
+        left: 0;
+    }
+
+    &__content {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__img {
+        max-width: 33.333%;
+        transform: scale(0.75);
+        transition: 0.3s;
+
+        @include responsive(tabLand) {
+            max-width: 30rem;
+        }
+
+        @media only screen and (max-width: 742px) {
+            max-width: 30%;
+        }
+    }
+
+    .img2 {
+        transform: scale(0.9);
+    }
+}
